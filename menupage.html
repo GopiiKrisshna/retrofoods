@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Foods</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+    
+        .btn {
+            background-color: brown;
+            color: white;
+            font-family: 'Pacifico', cursive;
+        }
+
+        .btn:hover {
+            background-color: rgb(255, 186, 186);
+            color: brown;
+            border-color: brown;
+        }
+
+        #menu {
+            font-family: 'Pacifico', cursive;
+            margin: 150px 80px;
+            text-align: center;
+        }
+
+        #menu h2, #menu h5 {
+            color: brown;
+        }
+
+        #menu h4 {
+            text-decoration: underline;
+            font-size: 25px;
+        }
+
+        #menu img {
+            border-radius: 15px;
+            box-shadow: 0 0 16px 8px grey;
+            z-index: 1;
+        }
+
+        #foods {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            font-size: 20px;
+        }
+
+        .description {
+            margin-top: 25px;
+            height: 150px;
+            padding: 30px;
+            border: 2px solid brown;
+            color: rgb(78, 71, 71);
+            background-color: rgb(255, 206, 206);
+        }
+
+        #description {
+            border-left: none;
+            border-top-right-radius: 100px;
+            border-bottom-right-radius: 100px;
+        }
+
+        #description1 {
+            border-right: none;
+            border-top-left-radius: 100px;
+            border-bottom-left-radius: 100px;
+        }
+
+        @media (max-width: 1200px) {
+            #menu {
+                margin: 150px 10px;
+            }
+
+            #content, #foods {
+                padding: 10px 0;
+            }
+
+            .description {
+                padding: 0;
+                height: 200px;
+                margin-top: 10px;
+                background-color: white;
+                border: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            #foods {
+                flex-direction: column;
+            }
+
+            .item-1 {
+                order: 2;
+            }
+
+            .item-2 {
+                order: 1;
+            }
+
+            #menu img {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- Menu Section -->
+       <section id="menu">
+            <h2>Our Special Foods</h2>
+            <div id="content" class="p-5">
+                <h4>Classic Breakfasts</h4>
+                <div id="foods">
+                    <img src="images/PancakeswithMapleSyrup.jpg" alt="foods" width="200px" height="200px">
+                    <div id="description" class="description">
+                        <h5>Pancakes with Maple Syrup</h5>
+                        <p>Fluffy and versatile, pancakes have been a breakfast favorite for centuries, symbolizing comfort and indulgence. 
+                            The addition of maple syrup ties to America's rich maple-producing heritage.
+                        </p>
+                    </div>
+                </div>
+                <div id="foods">
+                    <div id="description1" class="item item-1 description">
+                        <h5>Corned Beef Hash</h5>
+                        <p>A timeless comfort food, cherished for its humble origins as a creative way to repurpose leftovers, 
+                            offering a savory, crispy, and hearty meal that has graced American breakfast tables for generations.
+                        </p>
+                    </div>
+                    <img src="images/CornedBeefHash.png" class="item item-2" alt="foods" width="200px" height="200px">
+                </div>
+            </div>
+
+            <div id="content" class="p-5">
+                <h4>Regional Icons</h4>
+                <div id="foods">
+                    <img src="images/Clam-Chowder.jpg" alt="foods" width="200px" height="200px">
+                    <div id="description" class="description">
+                        <h5>Clam Chowder</h5>
+                        <p>Especially New England-style, this creamy soup is a maritime tradition, 
+                            celebrating the bounty of America's coastal waters and its seafaring history.
+                        </p>
+                    </div>
+                </div>
+                <div id="foods">
+                    <div id="description1" class="item item-1 description">
+                        <h5>Jambalaya</h5>
+                        <p>A vibrant dish from Louisiana, it blends Spanish, French, 
+                            and African influences, reflecting America's cultural melting pot in every bite.
+                        </p>
+                    </div>
+                    <img src="images/jambalaya.jpg" class="item item-2" alt="foods" width="200px" height="200px">
+                </div>
+            </div>
+
+            <div id="content" class="p-5">
+                <h4>Barbecue Staples</h4>
+                <div id="foods">
+                    <img src="images/pulled-pork-sandwiches.jpg" alt="foods" width="200px" height="200px">
+                    <div id="description" class="description">
+                        <h5>Pulled Pork Sandwiches</h5>
+                        <p>A smoky, tender delight, this dish is a cornerstone of Southern barbecue culture, 
+                            where slow cooking is elevated to an art form.
+                        </p>
+                    </div>
+                </div>
+                <div id="foods">
+                    <div id="description1" class="item item-1 description">
+                        <h5>Baby Back Ribs</h5>
+                        <p>Known for their smoky flavor and fall-off-the-bone tenderness, 
+                            ribs are synonymous with backyard barbecues and regional barbecue competitions.
+                        </p>
+                    </div>
+                    <img src="images/Baby-Back-Ribs.jpg" class="item item-2" alt="foods" width="200px" height="200px">
+                </div>
+            </div>
+
+            <div id="content" class="p-5">
+                <h4>Sandwich Legends</h4>
+                <div id="foods">
+                    <img src="images/classic-beef-cheeseburgers.jpeg" alt="foods" width="200px" height="200px">
+                    <div id="description" class="description">
+                        <h5>Beef Cheeseburger</h5>
+                        <p>The epitome of American culinary ingenuity, combining juicy, 
+                            flavorful patties with melted cheese to create a timeless classic 
+                            that has become a global symbol of comfort food and casual dining.
+                        </p>
+                    </div>
+                </div>
+                <div id="foods">
+                    <div id="description1" class="item item-1 description">
+                        <h5>Philly Cheesesteak</h5>
+                        <p>Hailing from Philadelphia, this sandwich reflects blue-collar roots
+                            with its hearty combination of thinly sliced beef and melted cheese.
+                        </p>
+                    </div>
+                    <img src="images/PhillyCheesesteak.jpg" class="item item-2" alt="foods" width="200px" height="200px">
+                </div>
+                <div id="foods">
+                    <img src="images/reuben-1.jpg" alt="foods" width="200px" height="200px">
+                    <div id="description" class="description">
+                        <h5>Reuben Sandwich</h5>
+                        <p>This corned beef and sauerkraut sandwich captures the influence of Jewish delis 
+                            in shaping American food culture.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="content" class="p-5">
+                <h4>Main Course Classics</h4>
+                <div id="foods">
+                    <div id="description1" class="item item-1 description">
+                        <h5>Meatloaf</h5>
+                        <p>A symbol of comfort food, this dish was popularized during the Great Depression 
+                            for its affordability and adaptability.
+                        </p>
+                    </div>
+                    <img src="images/Meatloaf.jpg" class="item item-2" alt="foods" width="200px" height="200px">
+                </div>
+                <div id="foods">
+                    <img src="images/TurkeywithStuffing.jpg" alt="foods" width="200px" height="200px">
+                    <div id="description" class="description">
+                        <h5>Turkey with Stuffing</h5>
+                        <p>The centerpiece of Thanksgiving, it symbolizes gratitude and family traditions, 
+                            deeply rooted in American history.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="content" class="p-5">
+                <h4>Dessert Icons</h4>
+                <div id="foods">
+                    <div id="description1" class="item item-1 description">
+                        <h5>Apple pie</h5>
+                        <p>a timeless classic, cherished for its wholesome flavors and its enduring role 
+                            as a symbol of comfort and tradition in American culture.
+                        </p>
+                    </div>
+                    <img src="images/Apple-Pie.jpg" class="item item-2" alt="foods" width="200px" height="200px">
+                </div>
+                <div id="foods">
+                    <img src="images/pecan-pie.jpg" alt="foods" width="200px" height="200px">
+                    <div id="description" class="description">
+                        <h5>Pecan Pie</h5>
+                        <p>A Southern classic, this pie is rich and indulgent, often associated with 
+                            holidays and family gatherings.
+                        </p>
+                    </div>
+                </div>
+                <div id="foods">
+                    <div id="description1" class="item item-1 description">
+                        <h5>S’mores</h5>
+                        <p>A nostalgic treat tied to campfires and outdoor adventures, combining marshmallows, 
+                            chocolate, and graham crackers.
+                        </p>
+                    </div>
+                    <img src="images/smores.jpg" class="item item-2" alt="foods" width="200px" height="200px">
+                </div>
+            </div>
+
+            <div id="content" class="p-5">
+                <h4>Snacks and Street Food</h4>
+                <div id="foods">
+                    <img src="images/buffalo-chicken-wings.jpg" alt="foods" width="200px" height="200px">
+                    <div id="description" class="description">
+                        <h5>Buffalo Wings</h5>
+                        <p>Invented in Buffalo, NY, these spicy wings are a game-day staple, 
+                            showcasing America's love for bold flavors and communal dining.
+                        </p>
+                    </div>
+                </div>
+                <div id="foods">
+                    <div id="description1" class="item item-1 description">
+                        <h5>Cornbread</h5>
+                        <p>With origins in Native American cuisine, 
+                            cornbread is a rustic dish that connects modern tables to early American history.
+                        </p>
+                    </div>
+                    <img src="images/Cornbread.jpg" class="item item-2" alt="foods" width="200px" height="200px">
+                </div>
+                <div id="foods">
+                    <img src="images/Funnel-Cakes.jpg" alt="foods" width="200px" height="200px">
+                    <div id="description" class="description">
+                        <h5>Funnel Cake</h5>
+                        <p>A crispy, sweet treat rooted in fairground traditions, 
+                            funnel cake reflects the festive spirit of summer carnivals and fairs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="content" class="p-5">
+                <h4>Beverage Staples</h4>
+                <div id="foods">
+                    <div id="description1" class="item item-1 description">
+                        <h5>Sweet Tea</h5>
+                        <p>A Southern icon, sweet tea is more than a drink—it's a symbol of hospitality 
+                            and tradition in the hot Southern summers.
+                        </p>
+                    </div>
+                    <img src="images/SweetTea.jpg" class="item item-2" alt="foods" width="200px" height="200px">
+                </div>
+                <div id="foods">
+                    <img src="images/RootBeerFloat.jpg" alt="foods" width="200px" height="200px">
+                    <div id="description" class="description">
+                        <h5>Root Beer Float</h5>
+                        <p>A soda shop favorite, this creamy, fizzy drink is a nostalgic throwback to 
+                            America's golden age of diners and malt shops.
+                        </p>
+                    </div>
+                </div>
+                <div id="foods">
+                    <div id="description1" class="item item-1 description">
+                        <h5>Mead (Honey Wine)</h5>
+                        <p>While technically a honey-based drink, mead was one of the oldest homemade wines,
+                             prized for its sweet and smooth flavor.
+                        </p>
+                    </div>
+                    <img src="images/honeyWine.webp" class="item item-2" alt="foods" width="200px" height="200px">
+                </div>
+            </div>
+
+            <div id="options">
+                <h5 class="text-secondary"><strong>Note : </strong>Share your food suggestions through our feedback page, and let’s bring those nostalgic flavors to our menu!"</h5>
+            </div>
+            
+       </section>
+    </div>
+</body>
+</html>

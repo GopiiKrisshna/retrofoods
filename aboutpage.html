@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Foods</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+
+        .btn {
+            background-color: brown;
+            color: white;
+            font-family: 'Pacifico', cursive;
+        }
+
+        .btn:hover {
+            background-color: rgb(255, 186, 186);
+            color: brown;
+            border-color: brown;
+        }
+
+        
+        #about {
+            margin-top: 100px;
+            background-image: url("images/aboutbg.jpg");
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 275vh;
+            font-family: 'Pacifico', cursive;
+            text-align: justify;
+        }
+
+        #content {
+            padding: 2% 0;
+            margin-bottom: 300px;
+            font-size: 20px;
+            background-color: white;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: row;
+        }
+
+        #content h2, #content h5 {
+            color: brown;
+        }
+
+        #content p {
+            color: rgb(57, 56, 56);
+        }
+
+        #dinecontent {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            #about {
+                background-image: none;
+            }
+
+            #content {
+                padding: 2% 8%;
+                margin-bottom: 0;
+            }
+
+            #image1, #image2, #image3 {
+                height: 300px;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            #image1 {
+                background-image: url("images/food.jpg");
+            }
+
+            #image2 {
+                background-image: url("images/ambiance.jpg");
+            }
+
+            #image3 {
+                background-image: url("images/dishes.jpg");
+            }
+
+            #hideformobile, #dinecontent1 {
+                display: none;
+            }
+
+            #dinecontent {
+                display: block;
+            }
+        }
+
+        @media (max-width: 1200px) {
+            [src="welcome.png"], [src="ambiance.jpg"], [src="kitchen.avif"], [src="dine.jpg"] {
+                display: none;
+            }
+
+            [src="food.jpg"], [src="dishes.jpg"] {
+                margin-top: 50px;
+            }
+
+            #dinecontent1 {
+                display: none;
+            }
+
+            #dinecontent {
+                display: block;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <section id="about">
+            <div class="" id="content">
+                <div id="hideformobile"><img src="images/welcome.png" alt="welcome" width="300px" height="250px" ></div>
+                <div class="px-5">
+                    <h2 class="text-center">Welcome to Retro Foods</h2>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;Step back in time and savor the flavors of the past! At Retro Foods, we’re on a mission to revive the timeless recipes that once graced the tables of our grandparents.
+                        In a world that moves forward at lightning speed, we’ve taken a delicious detour to bring back the forgotten culinary delights of yesteryears. <br>
+                        Every bite at Retro Foods tells a story of heritage, nostalgia, and the joy of simpler times. We started this journey to celebrate the essence of traditional cuisine, recreating recipes that are rich in flavor and history.
+                        From handwritten family cookbooks to treasured tales of village feasts, our menu is inspired by authentic sources and heartfelt memories.
+                    </p>
+                </div>
+            </div>
+            <div id="image1"></div>
+            <div class="" id="content">
+                <div id="hideformobile"><img src="images/food.jpg" alt="food" width="300px" height="250px"></div>
+                <div class="px-5">
+                    <h5 class="text-center text-decoration-underline">What Makes Us Unique?</h5>
+                    <p><strong>Authentic Recipes </strong>---- Carefully curated dishes prepared with traditional techniques. <br>
+                        <strong>Fresh Ingredients </strong>---- Sourced locally to ensure every meal is as fresh as it is flavorful. <br>
+                        <strong>Nostalgic Ambiance </strong>---- Step into a space designed to transport you to a retro era, complete with vintage decor, classic tunes, and warm hospitality. <br>
+                        <strong>Forgotten Flavors </strong>---- Relish the dishes you thought were long gone—brought back to life with love and precision.
+                    </p>
+                </div>
+                <div id="hideformobile"><img src="images/ambiance.jpg" alt="ambiance" width="300px" height="250px"></div>  
+            </div>
+
+            <div id="image2"></div>
+
+            <div class="" id="content">
+                <div class="mt-5" id="hideformobile"><img src="images/kitchen.avif" alt="kitchen" width="300px" height="250px"></div>
+                <div class="px-3">
+                    <h5 class="text-center text-decoration-underline">Our Retro Guarantee</h5>
+                    <p>Our menu is a culinary time machine, offering dishes that evoke memories of: <br>
+                        <ul class="ms-5">
+                            <li>Rustic countryside kitchens.</li> 
+                            <li>Festive family gatherings.</li>
+                            <li>Long-forgotten street-side delicacies.</li> 
+                        </ul>
+                        
+                        Whether it's a steaming bowl of a 1950s-style stew, an aromatic dessert from the 1970s, or snacks that were all the rage in small-town bazaars, 
+                        we ensure every plate is a tribute to a glorious past. <br>
+                        At Retro Foods, we don’t just serve meals—we serve experiences. Every dish is crafted with care, blending old-world charm with modern-day quality. 
+                        We invite you to join us in celebrating the timeless tradition of good food, great memories, and groovy times.
+                    </p>
+                </div>
+                <div class="mt-5" id="hideformobile"><img src="images/dishes.jpg" alt="dishes" width="300px" height="250px"></div>
+            </div>
+            <div id="image3"></div>
+            <div class="" id="content">
+                <div class="px-5" id="dinecontent1">
+                    <h5 class="text-center text-decoration-underline" >Come Dine with Us</h5>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;Bring along your family, friends, or simply your adventurous spirit, and allow us the honor of treating you to an unforgettable journey through the tastes of history.
+                         At Retro Foods, every dish is a gateway to a cherished memory, a celebration of flavors that have stood the test of time. <br>
+                         &nbsp;&nbsp;&nbsp;&nbsp;Rediscover the warmth and comfort of the flavors you thought were long forgotten. Picture yourself savoring the richness of recipes once passed down through generations,
+                         meticulously crafted to bring a sense of nostalgia with every bite. Let us take you back to a time when life was simpler, food was a labor of love, and every meal was a story waiting to be told. <br>
+                         &nbsp;&nbsp;&nbsp;&nbsp;Create new memories with us as we blend the charm of yesteryears with the joy of the present. Relish the sights, sounds, and tastes of a bygone era, all served with a dash of modern-day hospitality. 
+                        Whether you’re reminiscing about the past or making fresh, flavorful moments, Retro Foods is your destination for timeless dining experiences. <br>
+                        Join us as we celebrate tradition, community, and the art of great food—the Retro way!                        
+                    </p>
+                    <p>"Old is gold, and so is our food!" Let us take you on a delicious journey back to the days when life was simpler, meals were heartier, and every bite was a celebration of life.</p>    
+                </div> 
+                <div class="px-3" id="dinecontent">
+                    <h5 class="text-center text-decoration-underline" >Come Dine with Us</h5>
+                    <p>Bring your family, friends, or even your curiosity, and let us treat you to the tastes of history. 
+                        Rediscover the comfort of flavors you thought you had lost and create new memories with us, the Retro way! 
+                    </p>
+                    <p>"Old is gold, and so is our food!" Let us take you on a delicious journey back to the days when life was simpler, meals were heartier, and every bite was a celebration of life.</p> 
+                </div>
+                <div id="hideformobile"><img src="images/dine.jpg" alt="dine" width="300px" height="450px"></div> 
+            </div>
+        </section>
+    </div>
+</body>
+</html>

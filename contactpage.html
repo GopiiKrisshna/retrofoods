@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Foods</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+ 
+        .btn {
+            background-color: brown;
+            color: white;
+            font-family: 'Pacifico', cursive;
+        }
+
+        .btn:hover {
+            background-color: rgb(255, 186, 186);
+            color: brown;
+            border-color: brown;
+        }
+
+        #contact{
+            margin: 200px 250px 100px 250px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            font-family: 'Pacifico', cursive;
+            border: 5px double rgb(255, 186, 186);
+            border-radius: 25px;
+            box-shadow: brown 2px 2px 2px;
+        }
+        #icons{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        #content,#follow{
+            padding: 50px;
+        }
+        section h3{
+            color: brown;
+        }
+        section h5{
+            color: rgb(217, 69, 69);
+        }
+        section h4{
+            color: goldenrod;
+        }
+        section a{
+            color: black;
+        }
+
+        @media (max-width: 768px){
+            #contact{
+                margin: 0 30px;
+                display: block;
+            }
+            #content{
+                border-right: none;
+                padding: 50px;
+            }
+            #icons{
+                padding-top: 20px;
+                justify-content:space-around;
+            }
+        }
+        @media (max-width: 1200px){
+            #contact{
+                margin: 200px 30px;
+            }
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <section id="contact">
+            <div id="content">
+                <h3>Open Times</h3><br>
+                <h5>Monday-Thursday</h5>
+                <pre>   5pm to 11pm</pre>
+                <h5>Saturday-Sunday</h5>
+                <pre>   9am-11pm</pre>
+                <h4>Closed on Fridays</h4>
+            </div>
+            <div id="content">
+                <h3>Reach Us</h3>
+                <h5><i class="fa-solid fa-location-dot"></i> Location</h5>
+                <pre>   66,Maple Street,Hawkins</pre>
+                <h5><i class="fa-solid fa-envelope"></i> email</h5>
+                <pre>   <a href="mailto:hawkinsretrofoods@gmail.com">hawkinsretrofoods@gmail.com</a></pre>
+                <h5><i class="fa-solid fa-phone"></i> Phone Number</h5>
+                <pre>   <a href="tel:+919789250975">9789250975</a></pre>
+            </div>
+            <div id="follow">
+                <h3>Follow us on</h3>
+                <div id="icons">
+                    <h2><a href="https://www.instagram.com/gopiikrisshna_manikandan/profilecard/?igsh=ZGlzNzE5aWVlaHhp "><i class="fa-brands fa-facebook"></i></a></h2>
+                    <h2><a href="https://wa.me/qr/2VMOHIH6XR3AG1 "><i class="fa-brands fa-x-twitter"></i></a></h2>
+                    <h2><a href="https://www.instagram.com/gopiikrisshna_manikandan/profilecard/?igsh=ZGlzNzE5aWVlaHhp "><i class="fa-brands fa-instagram"></i></a></h2>
+                    <h2><a href="https://wa.me/qr/2VMOHIH6XR3AG1 "><i class="fa-brands fa-whatsapp"></i></a></h2>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
