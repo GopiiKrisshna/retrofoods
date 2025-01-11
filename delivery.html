@@ -77,7 +77,11 @@
         }
 
         @media (max-width: 768px) {
-            .food-item {
+            .food-item.mobile {
+                width: 50%;
+                padding: 15px;
+            }
+            .food-item.cart-active {
                 width: 100%;
                 padding: 15px;
             }
@@ -111,121 +115,121 @@
                 <div class="row scrollable-div text-center" id="food-details">
                     
                     <!-- Food Items -->
-                    <div class="col-md-4 food-item">
+                    <div class="col-md-4 food-item mobile">
                         <img src="images/PancakeswithMapleSyrup.jpg" alt="Food Item 1" class="img-fluid">
                         <h5>Pancakes with Maple Syrup</h5>
                         <p>Price: $10</p>
                         <button class="btn add-to-cart" data-name="Pancakes with Maple Syrup" data-price="10">Add</button>
                     </div>
-                    <div class="col-md-4 food-item">
+                    <div class="col-md-4 food-item mobile">
                         <img src="images/CornedBeefHash.png" alt="Food Item 2" class="img-fluid">
                         <h5>Corned Beef Hash</h5>
                         <p>Price: $7</p>
                         <button class="btn add-to-cart" data-name="Corned Beef Hash" data-price="7">Add</button>
                     </div>
-                    <div class="col-md-4 food-item">
+                    <div class="col-md-4 food-item mobile">
                         <img src="images/Clam-Chowder.jpg" alt="Food Item 3" class="img-fluid">
                         <h5>Clam Chowder</h5>
                         <p>Price: $8</p>
                         <button class="btn add-to-cart" data-name="Clam Chowder" data-price="8">Add</button>
                     </div>
-                    <div class="col-md-4 food-item">
+                    <div class="col-md-4 food-item mobile">
                         <img src="images/jambalaya.jpg" alt="Food Item 1" class="img-fluid">
                         <h5>Jambalaya</h5>
                         <p>Price: $10</p>
                         <button class="btn add-to-cart" data-name="Jambalaya" data-price="10">Add</button>
                     </div>
-                    <div class="col-md-4 food-item">
+                    <div class="col-md-4 food-item mobile">
                         <img src="images/pulled-pork-sandwiches.jpg" alt="Food Item 2" class="img-fluid">
                         <h5>Pulled Pork Sandwiches</h5>
                         <p>Price: $7</p>
                         <button class="btn add-to-cart" data-name="Pulled Pork Sandwiches" data-price="7">Add</button>
                     </div>
-                    <div class="col-md-4 food-item">
+                    <div class="col-md-4 food-item mobile">
                         <img src="images/Baby-Back-Ribs.jpg" alt="Food Item 3" class="img-fluid">
                         <h5>Baby Back Ribs</h5>
                         <p>Price: $8</p>
                         <button class="btn add-to-cart" data-name="Baby Back Ribs" data-price="8">Add</button>
                     </div>
-                    <div class="col-md-4 food-item">
+                    <div class="col-md-4 food-item mobile">
                         <img src="images/classic-beef-cheeseburgers.jpeg" alt="Food Item 1" class="img-fluid">
                         <h5>Beef Cheeseburger</h5>
                         <p>Price: $10</p>
                         <button class="btn add-to-cart" data-name="Beef Cheeseburger" data-price="10">Add</button>
                     </div>
-                    <div class="col-md-4 food-item">
+                    <div class="col-md-4 food-item mobile">
                         <img src="images/PhillyCheesesteak.jpg" alt="Food Item 2" class="img-fluid">
                         <h5>Philly Cheesesteak</h5>
                         <p>Price: $7</p>
                         <button class="btn add-to-cart" data-name="Philly Cheesesteak" data-price="7">Add</button>
                     </div>
-                    <div class="col-md-4 food-item">
+                    <div class="col-md-4 food-item mobile">
                         <img src="images/reuben-1.jpg" alt="Food Item 3" class="img-fluid">
                         <h5>Reuben Sandwich</h5>
                         <p>Price: $8</p>
                         <button class="btn add-to-cart" data-name="Reuben Sandwich" data-price="8">Add</button>
                     </div>
-                    <div class="col-md-4 food-item">
+                    <div class="col-md-4 food-item mobile">
                         <img src="images/Meatloaf.jpg" alt="Food Item 1" class="img-fluid">
                         <h5>Meatloaf</h5>
                         <p>Price: $10</p>
                         <button class="btn add-to-cart" data-name="Meatloaf" data-price="10">Add</button>
                     </div>
-                    <div class="col-md-4 food-item">
+                    <div class="col-md-4 food-item mobile">
                         <img src="images/TurkeywithStuffing.jpg" alt="Food Item 2" class="img-fluid">
                         <h5>Turkey with Stuffing</h5>
                         <p>Price: $7</p>
                         <button class="btn add-to-cart" data-name="Turkey with Stuffing" data-price="7">Add</button>
                     </div>
-                    <div class="col-md-4 food-item">
+                    <div class="col-md-4 food-item mobile">
                         <img src="images/Apple-Pie.jpg" alt="Food Item 3" class="img-fluid">
                         <h5>Apple pie</h5>
                         <p>Price: $8</p>
                         <button class="btn add-to-cart" data-name="Apple pie" data-price="8">Add</button>
                     </div>
-                    <div class="col-md-4 food-item">
+                    <div class="col-md-4 food-item mobile">
                         <img src="images/pecan-pie.jpg" alt="Food Item 1" class="img-fluid">
                         <h5>Pecan Pie</h5>
                         <p>Price: $10</p>
                         <button class="btn add-to-cart" data-name="Pecan Pie" data-price="10">Add</button>
                     </div>
-                    <div class="col-md-4 food-item">
+                    <div class="col-md-4 food-item mobile">
                         <img src="images/smores.jpg" alt="Food Item 2" class="img-fluid">
                         <h5>S’mores</h5>
                         <p>Price: $7</p>
                         <button class="btn add-to-cart" data-name="S’mores" data-price="7">Add</button>
                     </div>
-                    <div class="col-md-4 food-item">
+                    <div class="col-md-4 food-item mobile">
                         <img src="images/buffalo-chicken-wings.jpg" alt="Food Item 3" class="img-fluid">
                         <h5>Buffalo Wings</h5>
                         <p>Price: $8</p>
                         <button class="btn add-to-cart" data-name="Buffalo Wings" data-price="8">Add</button>
                     </div>
-                    <div class="col-md-4 food-item">
+                    <div class="col-md-4 food-item mobile">
                         <img src="images/Cornbread.jpg" alt="Food Item 1" class="img-fluid">
                         <h5>Cornbread</h5>
                         <p>Price: $10</p>
                         <button class="btn add-to-cart" data-name="Cornbread" data-price="10">Add</button>
                     </div>
-                    <div class="col-md-4 food-item">
+                    <div class="col-md-4 food-item mobile">
                         <img src="images/Funnel-Cakes.jpg" alt="Food Item 2" class="img-fluid">
                         <h5>Funnel Cake</h5>
                         <p>Price: $7</p>
                         <button class="btn add-to-cart" data-name="Funnel Cake" data-price="7">Add</button>
                     </div>
-                    <div class="col-md-4 food-item">
+                    <div class="col-md-4 food-item mobile">
                         <img src="images/SweetTea.jpg" alt="Food Item 3" class="img-fluid">
                         <h5>Sweet Tea</h5>
                         <p>Price: $8</p>
                         <button class="btn add-to-cart" data-name="Sweet Tea" data-price="8">Add</button>
                     </div>
-                    <div class="col-md-4 food-item">
+                    <div class="col-md-4 food-item mobile">
                         <img src="images/RootBeerFloat.jpg" alt="Food Item 1" class="img-fluid">
                         <h5>Root Beer Float</h5>
                         <p>Price: $10</p>
                         <button class="btn add-to-cart" data-name="Root Beer Float" data-price="10">Add</button>
                     </div>
-                    <div class="col-md-4 food-item">
+                    <div class="col-md-4 food-item mobile">
                         <img src="images/honeyWine.webp" alt="Food Item 2" class="img-fluid">
                         <h5>Mead (Honey Wine)</h5>
                         <p>Price: $7</p>
@@ -249,6 +253,7 @@
 
         function updateCart(){
             const cart=document.getElementById("cart");
+            const foodItems=document.getElementsByClassName("food-item");
             const cartList=document.getElementById("cart-items");
             const totalElement=document.getElementById("total-price");
 
@@ -257,6 +262,15 @@
             } else {
                 cart.style.display = "block"; 
             }
+            Array.from(foodItems).forEach((foodItem) => {
+                if (cart.style.display === "block") {
+                    foodItem.classList.remove("mobile");
+                    foodItem.classList.add("cart-active");
+                } else {
+                    foodItem.classList.remove("cart-active");
+                    foodItem.classList.add("mobile");
+                }
+            });
 
             cartList.innerHTML = "";
             for (const [name, item] of Object.entries(cartItems)){
