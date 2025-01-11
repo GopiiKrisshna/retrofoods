@@ -261,7 +261,7 @@
             cartList.innerHTML = "";
             for (const [name, item] of Object.entries(cartItems)){
                 const list=document.createElement("li");
-                list.textContent= `${name} (&times;${item.quantity}) - $${(item.price * item.quantity).toFixed(2)}`;
+                list.textContent= `${name} (${item.quantity}) - $${(item.price * item.quantity).toFixed(2)}`;
                 const deleteBtn = document.createElement("span");
                 deleteBtn.innerHTML = "&times;";
                 deleteBtn.classList.add("delete-btn");
